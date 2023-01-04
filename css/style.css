@@ -1,0 +1,451 @@
+/* CSS Reset*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/*-------------------- */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: hsl(243deg, 87%, 12%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6.4rem 8rem 9.6rem;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 4.8rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+}
+header ul a:link,
+header ul a:visited,
+header ul a:hover,
+header ul a:active {
+  color: hsl(243deg, 87%, 12%);
+  text-decoration: none;
+}
+
+.section-cta form, .section-files form {
+  display: grid;
+  gap: 1.6rem;
+  font-size: 1.6rem;
+  color: inherit;
+}
+
+.section-cta form button, .section-files form button {
+  background: hsl(224deg, 93%, 58%);
+  border: none;
+}
+
+.section-cta form button, .section-files form button, .section-cta form input, .section-files form input {
+  padding: 1.2rem 1.6rem;
+  border-radius: 0.4rem;
+}
+
+.section-cta form button:hover, .section-files form button:hover {
+  background: hsl(218deg, 95%, 69%);
+  color: hsl(240deg, 75%, 98%);
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.section-cta form, .section-files form {
+  width: 90%;
+}
+.section-cta form input, .section-files form input {
+  border: 1px solid hsl(243deg, 87%, 12%);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+.section-cta form input::-moz-placeholder, .section-files form input::-moz-placeholder {
+  font-size: 1.6rem;
+  color: hsl(0deg, 0%, 75%);
+}
+.section-cta form input:-ms-input-placeholder, .section-files form input:-ms-input-placeholder {
+  font-size: 1.6rem;
+  color: hsl(0deg, 0%, 75%);
+}
+.section-cta form input::placeholder, .section-files form input::placeholder {
+  font-size: 1.6rem;
+  color: hsl(0deg, 0%, 75%);
+}
+.section-cta form input:focus, .section-files form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.5);
+}
+.section-cta form button, .section-files form button {
+  font-size: 1.6rem;
+  color: hsl(240deg, 75%, 98%);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+.section-cta form button:focus, .section-files form button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.9);
+}
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 4.8rem;
+  padding: 0 8rem;
+}
+
+.hero-info {
+  grid-area: info;
+}
+
+.hero {
+  grid-area: hero;
+}
+
+.grid--2-equal-cols {
+  grid-template-areas: "info hero";
+}
+
+.grid--2-unequal-cols {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.grid--4-cols {
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.heading {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.4;
+}
+
+.heading--primary {
+  font-size: 4.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.heading--secondary {
+  font-size: 4.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+}
+
+.section-files {
+  padding-bottom: 12.8rem;
+}
+.section-files form {
+  grid-template-columns: 2fr 1fr;
+}
+
+.padding-top {
+  padding-top: 4.8rem;
+}
+
+.paragraph-width {
+  width: 75%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.section-productive .section-img {
+  background: url(../images/bg-curve-desktop.svg) top/cover no-repeat;
+  width: 100%;
+  height: 12rem;
+}
+.section-productive .section-content {
+  background: #f8f8fe;
+  padding-bottom: 9.6rem;
+}
+.section-productive .section-content .flex-container:link,
+.section-productive .section-content .flex-container:visited {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1.8rem;
+  color: hsl(170deg, 45%, 43%);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.4rem;
+  margin-bottom: 4.8rem;
+  transition: all 0.3s;
+}
+.section-productive .section-content .flex-container:link .icon-arrow,
+.section-productive .section-content .flex-container:visited .icon-arrow {
+  fill: currentColor;
+}
+.section-productive .section-content .flex-container:hover,
+.section-productive .section-content .flex-container:active {
+  color: #9adcd1;
+}
+.section-productive .section-content figure {
+  background: #fff;
+  padding: 3.2rem;
+  width: 50%;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+.section-productive .section-content figure .quotes-icon {
+  width: 2rem;
+  padding-bottom: 1.2rem;
+}
+.section-productive .section-content figure .testimonial {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+.section-productive .section-content figure .avatar-testimonial {
+  width: 5rem;
+  border-radius: 50%;
+}
+.section-productive .section-content figure span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  align-self: start;
+}
+.section-productive .section-content figure .kyle-burton {
+  flex-direction: column;
+}
+
+.section-cta {
+  background: hsl(238deg, 22%, 44%);
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
+}
+.section-cta h2 {
+  color: hsl(240deg, 75%, 98%);
+}
+.section-cta p {
+  width: 73%;
+  color: #d9dcf5;
+}
+.section-cta form button {
+  width: 50%;
+}
+
+footer {
+  padding: 9.6rem 8rem;
+  background: hsl(243deg, 87%, 12%);
+  font-size: 1.8rem;
+}
+footer .grid {
+  padding: 0;
+  align-items: start;
+}
+footer .logo {
+  margin-bottom: 3.2rem;
+}
+footer .footer-icon {
+  display: inline-block;
+}
+footer a:link,
+footer a:visited {
+  text-decoration: none;
+  list-style: none;
+  color: #cecfeb;
+  cursor: -webkit-grab;
+  cursor: grab;
+  transition: all 0.3s;
+}
+footer a:hover,
+footer a:active {
+  color: #5d67aa;
+}
+footer .contacts,
+footer .footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+footer address {
+  font-style: normal;
+}
+footer .social-links {
+  display: flex;
+  gap: 2.4rem;
+}
+footer .footer-icon:link,
+footer .footer-icon:visited {
+  color: #fff;
+  font-size: 3rem;
+  cursor: -webkit-grab;
+  cursor: grab;
+  transition: all 0.3s;
+}
+footer .footer-icon:hover,
+footer .footer-icon:active {
+  color: #5d67aa;
+}
+
+@media (max-width: 73.375rem) {
+  .grid {
+    padding: 0 1.6rem;
+  }
+  .grid--2-equal-cols {
+    grid-template-areas: "hero" "info";
+  }
+  h1,
+h2,
+p {
+    text-align: center;
+  }
+  .heading--primary {
+    font-size: 2.4rem;
+  }
+  .heading--secondary {
+    font-size: 2rem;
+  }
+  .paragraph {
+    font-size: 1.6rem;
+  }
+  header {
+    padding: 1.6rem 1.6rem 9.6rem;
+  }
+  header img {
+    width: 12rem;
+  }
+  header ul {
+    gap: 0.8rem;
+  }
+  .section-files {
+    padding-bottom: 12.8rem;
+  }
+  .section-content p {
+    text-align: left;
+  }
+  .section-content .section-productive__text figure {
+    width: 100%;
+  }
+  .how-fylo-works {
+    font-size: 1.6rem;
+  }
+  .form {
+    display: flex !important;
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .section-img {
+    background: url(../images/bg-curve-mobile.svg) top/cover no-repeat !important;
+  }
+  .section-content {
+    grid-template-columns: none;
+    grid-template-areas: "illustration" "information";
+  }
+  .section-content .section-productive__text {
+    grid-area: information;
+  }
+  .section-content .section-productive__img {
+    grid-area: illustration;
+  }
+  .section-content .paragraph-width {
+    width: 100%;
+  }
+  .section-productive__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-cta {
+    grid-template-columns: none;
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+    grid-template-areas: "cta-text" "cta-form";
+  }
+  .section-cta .paragraph {
+    width: 100%;
+  }
+  .section-cta form {
+    width: 100%;
+  }
+  .section-cta form button {
+    width: 100%;
+  }
+  .section-cta .section-cta__text {
+    grid-area: cta-text;
+  }
+  .section-cta .section-cta__form {
+    grid-area: cta-form;
+  }
+  footer {
+    padding: 6.4rem 1.6rem;
+  }
+  footer .grid--4-cols {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+  footer ul {
+    justify-self: center;
+  }
+}

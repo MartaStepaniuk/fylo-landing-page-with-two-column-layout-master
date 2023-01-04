@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+  <body>
+    <header>
+      <a href="#"><img src="images/logo.svg" alt="Logotype" /></a>
+      <nav>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-files grid grid--2-equal-cols">
+        <div class="hero-info">
+          <h1 class="heading heading--primary">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="paragraph">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+          <form action="#" class="form">
+            <input type="email" placeholder="Enter your email..." required />
+            <button>Get Started</button>
+          </form>
+        </div>
+        <img src="images/illustration-1.svg" alt="Illustration" class="hero" />
+      </section>
+
+      <section class="section-productive">
+        <div class="section-img"></div>
+        <div class="section-content grid grid--2-unequal-cols padding-top">
+          <div class="section-productive__text">
+            <h2 class="heading heading--secondary">
+              Stay productive, wherever you are
+            </h2>
+            <p class="paragraph paragraph-width">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="paragraph paragraph-width">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+            <a href="#" class="flex flex-container">
+              <span class="how-fylo-works">See how Fylo works</span>
+              <svg width="16" height="16">
+                <use
+                  class="icon-arrow"
+                  xlink:href="images/sprite.svg#icon-arrow"
+                ></use>
+              </svg>
+            </a>
+            <figure>
+              <img
+                src="images/icon-quotes.svg"
+                alt="Quotes icon"
+                class="quotes-icon"
+              />
+              <p class="testimonial">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+              <div class="flex">
+                <img
+                  src="images/avatar-testimonial.jpg"
+                  alt=""
+                  class="avatar-testimonial"
+                />
+                <div class="flex kyle-burton">
+                  <span>Kyle Burton</span>
+                  <p>Founder & CEO, Huddle</p>
+                </div>
+              </div>
+            </figure>
+          </div>
+          <img
+            src="images/illustration-2.svg"
+            alt="Illustration"
+            class="section-productive__img"
+          />
+        </div>
+      </section>
+
+      <section class="section-cta grid grid--2-unequal-cols">
+        <div class="section-cta__text">
+          <h2 class="heading heading--secondary">Get early access today</h2>
+          <p class="paragraph">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you
+          </p>
+        </div>
+        <form action="#" class="section-cta__form">
+          <input type="email" placeholder="Enter your email..." required />
+          <button>Get Started For Free</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <svg class="logo" width="166" height="49">
+        <use xlink:href="images/sprite.svg#footer-logo"></use>
+      </svg>
+      <div class="grid grid--4-cols">
+        <address class="contacts">
+          <div class="flex">
+            <img
+              src="images/icon-phone.svg"
+              alt="Phone icon"
+              class="footer-icon"
+            />
+            <a class="footer-link" href="tel:415-201-6370"
+              >Phone: +1-543-123-4567</a
+            >
+          </div>
+          <div class="flex">
+            <img
+              src="images/icon-email.svg"
+              alt="Email icon"
+              class="footer-icon"
+            />
+            <a class="footer-link" href="mailto:hello@omnifood.com"
+              >hello@omnifood.com</a
+            >
+          </div>
+        </address>
+
+        <nav class="nav-col">
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Us</a></li>
+            <li><a class="footer-link" href="#">Jobs</a></li>
+            <li><a class="footer-link" href="#">Press</a></li>
+            <li><a class="footer-link" href="#">Blog</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Contact Us</a></li>
+            <li><a class="footer-link" href="#">Terms</a></li>
+            <li><a class="footer-link" href="#">Privacy</a></li>
+          </ul>
+        </nav>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-icon" href="#"
+              ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="footer-icon" href="#"
+              ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="footer-icon" href="#"
+              ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
